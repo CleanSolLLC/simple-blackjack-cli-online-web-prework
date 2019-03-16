@@ -24,11 +24,6 @@ def end_game(card_total)
 end
 
 def initial_round
-<<<<<<< HEAD
-  first_deal = deal_card + deal_card
-  display_card_total(first_deal)
-  return first_deal
-=======
   card_total = deal_card + deal_card
   display_card_total(card_total)
   return card_total
