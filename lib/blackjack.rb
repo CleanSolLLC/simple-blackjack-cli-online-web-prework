@@ -24,9 +24,9 @@ def end_game(card_total)
 end
 
 def initial_round
-  card_total = deal_card + deal_card
-  display_card_total(card_total)
-  return card_total
+  first_draw = deal_card + deal_card
+  display_card_total(first_draw)
+  return first_draw
 end
 
 
@@ -69,7 +69,7 @@ def runner
 
     until card_total > 21
       card_total = hit?(card_total)
-      card_total = hit?
+      #card_total = hit?
       display_card_total(card_total)
     end
       end_game(card_total)
